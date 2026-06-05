@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfect 10.00 Challenge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <header class="header">
+    <p class="eyebrow">Reaction Challenge</p>
+    <h1>Perfect 10.00</h1>
+    <div class="rule"></div>
+    <p>Timer hides at 3 seconds. Stop it at exactly 10.00. Trust your instincts.</p>
+  </header>
+
+  <div class="display-area">
+    <div class="timer-frame">
+      <span id="timerEl">0.00</span>
+      <div class="timer-label">seconds elapsed</div>
+    </div>
+  </div>
+
+  <div class="btn-wrap" id="btnWrap">
+    <button id="mainBtn" aria-label="Start timer">
+      <span id="btnLabel">START</span>
+      <span id="btnHint">press to begin</span>
+    </button>
+  </div>
+
+  <div class="result-zone">
+    <div id="verdictEl"></div>
+    <div id="varianceEl"></div>
+    <button id="shareBtn">copy result</button>
+    <div id="copiedMsg"></div>
+  </div>
+
+  <p class="footer">Test your internal clock &mdash; no peeking</p>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
