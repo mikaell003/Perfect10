@@ -4,14 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Perfect 10.00 Challenge</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="wrapper">
+
   <header class="header">
     <p class="eyebrow">Reaction Challenge</p>
     <h1>Perfect 10.00</h1>
@@ -27,7 +30,7 @@
   </div>
 
   <div class="btn-wrap" id="btnWrap">
-    <button id="mainBtn" aria-label="Start timer">
+    <button id="mainBtn">
       <span id="btnLabel">START</span>
       <span id="btnHint">press to begin</span>
     </button>
@@ -36,15 +39,20 @@
   <div class="result-zone">
     <div id="verdictEl"></div>
     <div id="varianceEl"></div>
-   <div class="share-buttons">
-    <button id="shareBtn">Copy Result</button>
-    <button id="xBtn">Share on X</button>
-    <button id="whatsappBtn">WhatsApp</button>
-</div> 
+
+    <div class="share-buttons">
+      <button id="shareBtn">Copy Result</button>
+      <button id="xBtn">Share on X</button>
+      <button id="whatsappBtn">WhatsApp</button>
+    </div>
+
     <div id="copiedMsg"></div>
   </div>
 
-  <p class="footer">Test your internal clock &mdash; no peeking</p>
+  <p class="footer">
+    Test your internal clock — no peeking
+  </p>
+
 </div>
 
 <script src="game.js"></script>
