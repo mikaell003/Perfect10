@@ -275,9 +275,10 @@ body::before {
   transition: border-color .15s, color .15s;
 }
 
-#shareBtn:hover {
-  border-color: #555;
-  color: var(--text);
+#shareBtn,
+#xBtn,
+#whatsappBtn {
+    display:none;
 }
 
 #copiedMsg {
@@ -296,4 +297,30 @@ body::before {
   color: #333;
   text-align: center;
   text-transform: uppercase;
+}
+.share-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.share-buttons button{
+    display:none;
+    padding:8px 18px;
+    font-family:'Space Mono', monospace;
+    font-size:10px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    border:1px solid var(--border);
+    background:transparent;
+    color:var(--muted);
+    cursor:pointer;
+    border-radius:2px;
+    transition:.2s;
+}
+
+.share-buttons button:hover{
+    border-color:#555;
+    color:var(--text);
 }
